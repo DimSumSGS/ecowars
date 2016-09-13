@@ -15,7 +15,13 @@
  */
 
  /*homepage*/
-
+.homebackground { 
+  background: url('http://www.ajithkumar.cc/wp-content/uploads/2012/06/nature-vs-man.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .pull-me{
     -webkit-box-shadow: 0 0 8px #FFD700;
     -moz-box-shadow: 0 0 8px #FFD700;
@@ -23,7 +29,7 @@
     cursor:pointer;
 }
 .panel {
-	background: #ffffbd;
+	background: white;
     background-size:90% 90%;
     height:300px;
 	display:none;
@@ -35,13 +41,13 @@
 .slide {
 	margin:0;
 	padding:0;
-	border-top:solid 2px #cc0000;
+	border-top:solid 2px #765220;
 	text-align:center;
 }
 .pull-me {
 	display:block;
     position:relative;
-    right:-25px;
+    left: 46%;
     width:150px;
     height:20px;
 	font-family:arial,sans-serif;
@@ -53,14 +59,16 @@
     -moz-border-bottom-right-radius:5px;
     border-bottom-left-radius:5px;
     border-bottom-right-radius:5px;
+    text-align:center;
 }
 .pull-me p {
     text-align:center;
 }
 
 #map {
-	margin-top: 900px;
+	margin-top: 10px;
 	text-align: center;
+    position:absolute;
 }
 
  /*map selection screen*/
@@ -70,7 +78,7 @@
  	top:350px;
  	width:250px;
  	height:280px;
- 	background-color:yellow;
+ 	background-color:#f1d796;
  	transition-delay:ease;
  	text-align:center;
  
@@ -81,3 +89,4 @@
  	background-color: #c1c132;
  }
 
+ /*game page*/
