@@ -14,3 +14,19 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+$(document).ready(function(){
+  $('.pull-me').click(function()
+    {
+        $('.panel').slideToggle('slow');
+    });
+    
+  $('.region').hover(
+    function(){
+    $(this).addClass('active')
+    },
+    function(){
+    $(this).removeClass('active')
+        
+  });
+
+});
