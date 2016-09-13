@@ -81,3 +81,31 @@
  	background-color: #c1c132;
  }
 
+#nature {
+    background-color: #008542;
+    width:250px;
+    height:280px;
+}
+
+#humans {
+    position: relative;
+    background-color: #e51212;
+    left: 860px;
+    top:350px;
+    width:250px;
+    height:280px;
+}
+
+#border {
+    position: relative;
+    background-color: #000000;
+    left: 500px;
+    width: 100px;
+    height: 1500px;
+}
+
+#game_menu {
+    background-color: #ad5900;
+    width: 100px;
+    height: 1000px;
+}
