@@ -121,8 +121,7 @@
  /*map selection screen*/
 .region {
  	position: fixed;
- 	left: 860px;
- 	top:350px;
+ 	left: 40%;
  	width:250px;
  	height:280px;
  	background-color:#f1d796;

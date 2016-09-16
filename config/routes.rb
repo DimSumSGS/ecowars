@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   root 'home#home'
   get '/home' => 'home#home'
   get '/home/map' => 'home#map'
-  get '/home/map/game' => 'home#game'
+  get '/game' => 'game#game'
 end
