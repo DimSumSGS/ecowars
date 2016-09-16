@@ -15,6 +15,21 @@
 //= require turbolinks
 //= require_tree .
 $(document).ready(function(){
+  $('.popup').fadeIn('slow');
+ 
+
+  $('.xclose').hover(
+    function(){
+    $(this).addClass('xclosehover')
+    },
+    function(){
+    $(this).removeClass('xclosehover')	
+    });
+  
+  $('.xclose').click(function(){
+  	$('.popup').fadeOut('slow');
+  	});
+
   $('.pull-me').click(function()
     {
         $('.panel').slideToggle('slow');
@@ -27,6 +42,6 @@ $(document).ready(function(){
     function(){
     $(this).removeClass('active')
         
-  });
+    });
 
 });
