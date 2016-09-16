@@ -5,5 +5,3 @@ end
 def map
 end
 
-def game
-end
