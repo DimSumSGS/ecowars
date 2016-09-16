@@ -143,24 +143,11 @@
  	background-color: #c1c132;
  }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
 .nature {
     position: absolute;
     background-color: #191919;
     left: 50px;
     top:350px;
-=======
- /*game page*/
-
-#nature {
-    background-color: #008542;
->>>>>>> 55cdbc23ae8e6b4ad6d6a249dfd8f7bf284c2435
-    width:250px;
-    height:280px;
-    border-radius: 10px;
-    z-index: 100;
 }
 
 #humans {
@@ -189,8 +176,3 @@
     width: 100px;
     height: 1000px;
 }
-<<<<<<< HEAD
-=======
- /*game page*/
-=======
->>>>>>> 55cdbc23ae8e6b4ad6d6a249dfd8f7bf284c2435
