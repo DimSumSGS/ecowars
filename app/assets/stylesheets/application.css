@@ -127,42 +127,9 @@
  	background-color:#f1d796;
  	transition-delay:ease;
  	text-align:center;
- 
 
  }
 
  .active {
  	background-color: #c1c132;
  }
-
-.nature {
-    background-color: #191919;
-    left: 50px;
-    top:350px;
-}
-
-#humans {
-    position: relative;
-    background-color: #e51212;
-    left: 860px;
-    top:350px;
-    width:250px;
-    height:280px;
-    border-radius: 10px;
-}
-
-#border {
-    position: static;
-    background-color: #000000;
-    width: 100px;
-    height: 1500px;
-}
-
-#game_menu {
-    position: relative;
-    background-color: #ad5900;
-    left: 50px;
-    top: 20px;
-    width: 100px;
-    height: 1000px;
-}
