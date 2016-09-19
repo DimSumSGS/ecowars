@@ -121,20 +121,9 @@
  /*map selection screen*/
 .region {
  	position: fixed;
-<<<<<<< HEAD
-    display: inline-block;
-    left: 50%;
-    top: 50%;
- 	width: 12%;
- 	height: 12%;
-    margin: 0px;
-    border: 5%;
-    padding: 5%;
-=======
  	left: 40%;
  	width:250px;
  	height:280px;
->>>>>>> df10c2441152269bc0f14d7d350f3f6adfc20773
  	background-color:#f1d796;
  	transition-delay:ease;
  	text-align:center;
