@@ -1,8 +1,36 @@
 #gamebackground { 
-  background: url('http://www.ajithkumar.cc/wp-content/uploads/2012/06/nature-vs-man.jpg') no-repeat center center fixed; 
+  background: url('http://wallpapercave.com/wp/Me0Zt6c.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
 
+#humans {
+    position: relative;
+    background-color: #e51212;
+    left: 860px;
+    top:350px;
+    width:250px;
+    height:280px;
+    border-radius: 10px;
+}
+
+.game_menu {
+    background-color: #ad5900;
+    left: 50px;
+    top: 20px;
+    width: 100px;
+    height: 1000px;
+}
+
+.game_menu_h {
+	background-color: #ce7318;
+}
+
+.clicker {
+	width: auto;
+	max-width: 100%;
+	height: auto;
+>>>>>>> 533ca3b8a30392f86a8dc21c6f26a8c910a0725a
 }
