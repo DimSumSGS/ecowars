@@ -3,24 +3,32 @@
 <html id='gamebackground'>
 <head>
 	<link type="text/css" rel="stylesheet" href="game.css" />
+	<script type ='text/javascript' src="game.js"></script>
+	<script type="text/javascript">
+   $(document).ready(function(){
+
+  $('#clicker').clicker(function(){
+    $(this).addClass('pressed')
+    },
+    function(){
+    $(this).removeClass('pressed')
+        
+    });
+
+});
+</script>
 	<title>Ecowars</title>
 </head>
 
 <body>
-	<div class= "nature">
-		
-	</div>
-	<div id= "humans">
-		
-	</div>
-	<div id= "border">
 
-	</div>
-	<div id= "game_menu">
+	<div id="blue"></div>
+    <div id="red"></div>
+    <div id="green"></div>
+	<div id="yellow"></div>
+    <div id="black"></div>
 
-	</div>
-	<div class= "clicker">
-	<img src = http://www.clker.com/cliparts/t/f/p/b/l/o/small-pointy-pine-tree-hi.png>
-	</div>
+    <div class= "clicker">Click Me!</div>
+
 </body>
 

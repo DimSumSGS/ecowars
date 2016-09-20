@@ -1,9 +1,11 @@
-$(document).ready(function){
-	$('#game_menu').hover(
-    function(){
-    $(this).addClass('game_menu_h')
+$(document).ready(function(){
+
+  $('#clicker').click(function(){
+    $(this).addClass('pressed')
     },
     function(){
-    $(this).removeClass('game_menu_h')	
+    $(this).removeClass('pressed')
+        
     });
+
 });
