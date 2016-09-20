@@ -14,6 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+/* Home screen */
 $(document).ready(function(){
   $('.popup').fadeIn('slow');
  

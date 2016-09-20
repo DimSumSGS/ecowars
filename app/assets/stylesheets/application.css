@@ -28,7 +28,7 @@
 
 .xclose{
     width:30px;
-    height:30px;
+    height:27.4px;
     padding-top:4px;
     display:inline-block;
     position:absolute;
@@ -74,10 +74,9 @@
     cursor:pointer;
 }
 .panel {
-	background: white;
     background-size:100% 100%;
     height:300px;
-	display:none;
+    display:none;
     font-family:garamond,serif;
 
 }
@@ -115,12 +114,19 @@
 #map {
 	margin-top: 500px;
 	text-align: center;
-    position:absolute
+    position:fixed
+}
+#ok {
+    background-image:url('file://C:/Users/Admin/Pictures/Capture.png'); 
+    left:50%;
+    top:50%;
+    position:absolute;
+    z-index:100;
 }
 
  /*map selection screen*/
 .region {
- 	position: fixed;
+ 	position: absolute;
  	left: 40%;
  	width:250px;
  	height:280px;
