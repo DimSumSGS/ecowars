@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
 
-  $('#clicker').click(function(){
+  $('.clicker').click(function(){
     $(this).addClass('pressed')
     },
     function(){
@@ -9,4 +9,3 @@ $(document).ready(function(){
         
     });
 
-$(document).ready(function){
