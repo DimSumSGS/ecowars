@@ -1,12 +1,48 @@
 
 <%provide(:title, 'Game Page') %>
 <html id='gamebackground'>
+
 <head>
 	<link type="text/css" rel="stylesheet" href="game.css" />
-	<script type ='text/javascript' src="game.js"></script>
+
 	<title>Ecowars</title>
 </head>
+<!-- Game menu bar -->
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Game Menu</span>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Buys</a>
+  <a href="#">Contact</a>
+</div>
 
+<!--Copied the javscript into html because javascript in the js file doesnt work other than jquery-->
+
+<script>function openNav() {
+    	document.getElementById("mySidenav").style.width = "250px";
+	};
+
+/* Set the width of the side navigation to 0 */
+	function closeNav() {
+    	document.getElementById("mySidenav").style.width = "0";
+	};
+
+	function openNav() {
+    	document.getElementById("mySidenav").style.width = "250px";
+    	document.getElementById("main").style.marginLeft = "250px";
+	}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+	function closeNav() {
+    	document.getElementById("mySidenav").style.width = "0";
+    	document.getElementById("main").style.marginLeft = "0";
+	}
+</script>
+
+
+
+<<<<<<< HEAD
 <body>
 
 	<div id="blue"></div>
@@ -18,4 +54,12 @@
     <div class= "clicker">Click Me!</div>
 
 </body>
+=======
+<div id="main">
+I need to be pushed over!
+</div>
 
+
+>>>>>>> 70e9b344fdfc4b822c4147b4778bbcf8c852e61e
+
+<!--   	<p id='xclose'>x</p> -->

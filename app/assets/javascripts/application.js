@@ -32,9 +32,14 @@ $(document).ready(function(){
   	$('.popup').fadeOut('slow');
   	});
 
-  $('.pull-me').click(function()
-    {
-        $('.panel').slideToggle('slow');
+  /* Ask eric how to apply jquery to sidenav a*/
+  $('.sidenav_a').hover(
+    function(){
+    $(this).addClass('navactive')
+    },
+    function(){
+    $(this).removeClass('navactive')
+        
     });
     
   $('.region').hover(
