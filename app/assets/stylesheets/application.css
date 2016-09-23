@@ -81,24 +81,29 @@
     box-shadow:0px 2px 6px rgba(0,0,0,1);
 }
 
+.hlinks {
+    width:750px;
 
+}
 /* The navigation menu links */
 .hlinks a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 28px;
     color: #818181;
-    display: block;
     transition: 0.3s;
-    block:inline;
+    display:block;
 
-}
+
+} /* Try to get the logo and div to go higher*/
 
 .hlogo {
     float:right;
-    top: 0;
-    padding-right: 10px;    
+    top: -100px;
+    padding-right: 600px;    
     z-index:10;
+    height:200px;
+    width:650px%;
 }
 
 /* When you mouse over the navigation links, change their color */
