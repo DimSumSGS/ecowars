@@ -65,63 +65,74 @@
     border-radius:3px;
     background:#fff;
 }
-/* Play bar */
-.sidenav {
-    height: 0%; /* 100% Full-height */
+
+/*Nav bar*/
+.hsidenav {
+    height: 0; /* 100% Full-height */
     width: 100%; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
-    top: 0px;
-    left: 0; 
+    top:  0px;
+    left: 0;
     background-color: rgba(38, 44, 44, 0.75);
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 5px; /* Place content 60px from the top */
-    transition: 0.5s; /* effect time */
+    transition: 0.6s; /* 0.5 second transition effect to slide in the sidenav */
     box-shadow:0px 2px 6px rgba(0,0,0,1);
 }
 
+
 /* The navigation menu links */
-.sidenav a {
-    padding: 11px 8px 8px 32px;
+.hlinks a {
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;    
+    font-size: 25px;
+    color: #818181;
     display: block;
-    transition: 0.3s
-    background-color:rgba(0,0,0,1);
+    transition: 0.3s;
+    block:inline;
 
 }
 
-.navactive {
-    color: #9E9E9E;
-}
-
-
-.sidenav .closebtn {
-    position: absolute;
+.hlogo {
+    float:right;
     top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-top: 50px;
+    padding-right: 10px;    
+    z-index:10;
+}
+
+/* When you mouse over the navigation links, change their color */
+.hlinks a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
 }
 
 /* Position and style the close button (top right corner) */
+.hsidenav .hclosebtn {
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 
+}
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
+#hmain {
     transition: margin-top .5s;
     padding: 20px;
 }
 
-#play {
-    left:50%
-    top:50%;
-    font-size: 100px;
-    position: fixed;
-}
+
+
+
+
+
+
+
+
 #map {
-	margin-top: 500px;
-	text-align: center;
+    margin-top: 500px;
+    text-align: center;
     position:fixed
 }
 
@@ -135,16 +146,16 @@
 
  /*map selection screen*/
 .region {
- 	position: absolute;
- 	left: 40%;
- 	width:250px;
- 	height:280px;
- 	background-color:#f1d796;
- 	transition-delay:ease;
- 	text-align:center;
+    position: absolute;
+    left: 40%;
+    width:250px;
+    height:280px;
+    background-color:#f1d796;
+    transition-delay:ease;
+    text-align:center;
 
  }
 
  .active {
- 	background-color: #c1c132;
+    background-color: #c1c132;
  }
