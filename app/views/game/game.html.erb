@@ -3,45 +3,46 @@
 <html id='gamebackground'>
 
 <head>
+<<<<<<< HEAD
 	<link type="text/css" rel="stylesheet" href="game.css" />
 		
+=======
+	<link type="text/css" rel="stylesheet" href="game.css"/>
+>>>>>>> c1c25a0ba63a002cdd296be959aa86264a9f67af
 	<title>Ecowars</title>
 </head>
 <!-- Game menu bar -->
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Game Menu</span>
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<span style="font-size:30px;cursor:pointer" onclick="gopenNav()">&#9776; Game Menu</span>
+<div id="gSidenav" class="gsidenav">
+  <a href="javascript:void(0)" class="gclosebtn" onclick="gcloseNav()">&times;</a>
   <a href="#">About</a>
   <a href="#">Services</a>
   <a href="#">Buys</a>
   <a href="#">Contact</a>
 </div>
 
+<!-- Use the element to open the sidenav -->
+
 <!--Copied the javscript into html because javascript in the js file doesnt work other than jquery-->
 
-<script>function openNav() {
-    	document.getElementById("mySidenav").style.width = "250px";
-	};
-
-/* Set the width of the side navigation to 0 */
-	function closeNav() {
-    	document.getElementById("mySidenav").style.width = "0";
-	};
-
-	function openNav() {
-    	document.getElementById("mySidenav").style.width = "250px";
-    	document.getElementById("main").style.marginLeft = "250px";
-	}
+<script>
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function gopenNav() {
+    document.getElementById("gSidenav").style.width = "250px";
+    document.getElementById("gmain").style.marginLeft = "250px";
+}
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-	function closeNav() {
-    	document.getElementById("mySidenav").style.width = "0";
-    	document.getElementById("main").style.marginLeft = "0";
-	}
+function gcloseNav() {
+    document.getElementById("gSidenav").style.width = "0";
+    document.getElementById("gmain").style.marginLeft = "0";
+}
+
 </script>
 
 <!-- Everything must be put inside the div main -->
 
+<<<<<<< HEAD
 <div id="main">
 
 	<table>
@@ -72,4 +73,9 @@
     <div class= "clicker">Click Me!</div>
 
 </div>
+=======
+>>>>>>> c1c25a0ba63a002cdd296be959aa86264a9f67af
 
+<div id="gmain">
+  push me over
+</div>

@@ -5,37 +5,34 @@
 <head>
 </head>
 <div id='play'>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Play now!</span>
+<span style="font-size:30px;cursor:pointer" onclick="hopenNav()">&#9776; Play now!</span>
 </div>
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Help</a>
-  <a href="#">Contact</a>
-  <a href="#">Game</a>
-  <a href="#">Social Media Pages</a>
+<div id="hSidenav" class="hsidenav">
+  <a href="javascript:void(0)" class="hclosebtn" onclick="hcloseNav()">&times;</a>
+  <div class='hlinks'>
+    <a href="#">Help</a>
+    <a href="#">Contact</a>
+    <a href="/home/map">Game</a>
+    <a href="#">Social Media Pages</a>
+  </div>
+  <div class='hlogo'>
+    <img src ='https://images.cooltext.com/4780179.png'/>
+    </div>
 </div>
 
 <!--Copied the javscript into html because javascript in the js file doesnt work other than jquery-->
 
-<script>function openNav() {
-        document.getElementById("mySidenav").style.height = "200px";
-    };
-
-/* Set the width of the side navigation to 0 */
-    function closeNav() {
-        document.getElementById("mySidenav").style.height = "0";
-    };
-
-    function openNav() {
-        document.getElementById("mySidenav").style.height = "200px";
-        document.getElementById("main").style.marginTop = "200px";
-    }
+<script>
+function hopenNav() {
+    document.getElementById("hSidenav").style.height = "200px";
+    document.getElementById("hmain").style.marginTop = "200px";
+}
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-    function closeNav() {
-        document.getElementById("mySidenav").style.height = "0";
-        document.getElementById("main").style.marginTop = "0";
-    }
+function hcloseNav() {
+    document.getElementById("hSidenav").style.height = "0";
+    document.getElementById("hmain").style.marginTop = "0";
+}
 </script>
 
 <div class="popup">
@@ -47,24 +44,13 @@
         <p class="xclose">x</p>
     </div>
 </div>
-<body>
-	<div class="panel">
-    <br />
-    <br />
-    <p> Now you see me!</p>
+
+<div id="hmain">
+
+    <div id="ok">
     </div>
-    <p class="slide">
-    	<div class="pull-me">Play Now!
-    	</div>
-    </p>
-</body>
 
-
-<div id= "map">
-<%= link_to 'Map', home_map_path %>
-</div>
-
-<div id="ok">
 </div>
 </html>
+
 

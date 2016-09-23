@@ -32,16 +32,6 @@ $(document).ready(function(){
   	$('.popup').fadeOut('slow');
   	});
 
-  /* Ask eric how to apply jquery to sidenav a*/
-  $('.sidenav_a').hover(
-    function(){
-    $(this).addClass('navactive')
-    },
-    function(){
-    $(this).removeClass('navactive')
-        
-    });
-    
   $('.region').hover(
     function(){
     $(this).addClass('active')
