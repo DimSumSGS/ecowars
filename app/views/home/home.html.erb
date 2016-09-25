@@ -2,72 +2,21 @@
 <%provide(:title , 'Home page') %>
 <html id='homebackground'>
 <link type="text/css" rel="stylesheet" href="homebackground.css" />
-<head>
-</head>
-<div id='play'>
-<span style="font-size:30px;cursor:pointer" onclick="hopenNav()">&#9776; Play now!</span>
-</div>
-<div id="hSidenav" class="hsidenav">
-  <a href="javascript:void(0)" class="hclosebtn" onclick="hcloseNav()">&times;</a>
-  <div class='hlinks'>
-    <a href="#">Help</a>
-    <a href="#">Contact</a>
-    <a href="/home/map">Game</a>
-    <a href="#">Social Media Pages</a>
-  </div>
-  <div class='hlogo'>
-  <img src ='https://images.cooltext.com/4780179.png'/>
-  </div>
+
+<div id="hnav" class="hnav">
+    <div class='hlinks'>
+        <a href="#">Help</a>
+        <a href="#">Contact</a>
+        <a href="#">Social Media</a>
+    </div>
 </div>
 
-<!--Copied the javscript into html because javascript in the js file doesnt work other than jquery-->
+    
 
-<script>
-function hopenNav() {
-    document.getElementById("hSidenav").style.height = "200px";
-    document.getElementById("hmain").style.marginTop = "200px";
-}
 
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-function hcloseNav() {
-    document.getElementById("hSidenav").style.height = "0";
-    document.getElementById("hmain").style.marginTop = "0";
-}
-</script>
 
 <!-- Login/ User display interface after clicking play -->
 
- <body>
-
-<button onclick="document.getElementById('login').style.display='block'" style="width:auto;">Login</button>
-
-<div id="login" class="modal">
-  
-  <form class="modal-content animate">
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('login').style.display='none'" class="close">&times;</span>
-      <img src="http://dy-communication.com/wp-content/uploads/2015/10/user-avatar.png" class="avatar">
-    </div>
-
-    <div class="container">
-      <label style='font-size:20px'><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required> <!--Automatically asks u to fill out-->
-
-      <label style='font-size:20px'><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-        
-        <a href="/home/map" id='loginbtn'>Login</a>
-      <input type="checkbox" checked="checked"> Remember me
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
-      <span id='forgotpass'>Forgot password? Email jsung2000@gmail.com or xrocxion@gmail.com.</span>
-    </div>
-  </form>
-</div>
-
-</body>
 
 
 <!--Development popup-->
@@ -81,13 +30,47 @@ function hcloseNav() {
     </div>
 </div>
 
-
-
-
-<div id="hmain">
-
-    <div id="Chromahills">
+<body>
+<header>
+    <div class="header-content">
+        <div class="header-content-inner">
+            <h1>Dramatically Engage.</h1>
+            <p>Take part in a game where humans are pitted against the retaliating spectrum of nature.</p>
+            <p>Navigate to the top to begin.</p>
+        </div>
+        <button1 onclick="document.getElementById('login').style.display='block'">ENGAGE NOW</button1>
     </div>
+</header>
+
+
+
+<div id="login" class="modal">
+  
+  <form class="modal-content animate">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('login').style.display='none'" class="close">&times;</span>
+      <img src="http://dy-communication.com/wp-content/uploads/2015/10/user-avatar.png" class="avatar">
+    </div>
+
+    <div class="container">
+      <label style='font-size:20px'><b>Username</b></label>      
+      <input type="text" placeholder="Enter Username" id ="uname" required> <!--Declare variables for uname and pass and display it in game.html.erb-->
+      
+      <label style='font-size:20px'><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" id="psw" required>
+       
+        <a href="/home/map" id='loginbtn'>Login</a>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
+      <span id='forgotpass'>Forgot password? Email jsung2000@gmail.com or xrocxion@gmail.com.</span>
+    </div>
+  </form>
+</div>
+
+</body>
 
 </div>
 </html>
