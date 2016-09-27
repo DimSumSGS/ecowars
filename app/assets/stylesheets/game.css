@@ -55,8 +55,6 @@
     margin: 5px;
     padding: 10px;
     float: right;
-
-    clear:both;
 }
 
 #red {
@@ -134,11 +132,29 @@
 }
 
 table, tr, td {
-    border: 5px #70b8ff dashed;
+    border: 2px #70b8ff dashed;
 }
 
-.buy_trees, tr {
-    font-family: Arial;
-    font-size: 24px;
-    font-style: bold;
+======================DO NOT DELETE=========================
+
+input {
+    font-size: 6px;
+    background-color: transparent;
+    text-align: center;
+    border-width: 0;
+    width: 100%;
+    margin: 0 0 .1em 0;
+    color: #fff;
 }
+
+.box {
+    text-align: center;
+}
+
+#bottom {
+    font-size: 32px;
+}
+
+
+
+======================DO NOT DELETE===========================

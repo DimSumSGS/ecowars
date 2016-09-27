@@ -43,6 +43,7 @@ $(document).ready(function(){
  
 
 
+<<<<<<< HEAD
   $( ".clicker" )
     .mouseup(function() {
       $( this ).removeClass( "pressed" );
@@ -60,3 +61,45 @@ $(document).ready(function(){
     console.log(tree);
   }
 });
+=======
+});
+
+function modify_qty(val) {
+    var qty = document.getElementById('qty').value;
+    var new_qty = parseInt(qty,10) + val;
+    
+    if (new_qty < 0) {
+        new_qty = 0;
+    }
+    
+    document.getElementById('qty').value = new_qty;
+    return new_qty;
+}
+
+/*vvvvvv Not Finished Yet vvvvvvv*/
+
+function modify_points(p) {
+  var points = document.getElementById('points').value
+  var new_points = parseInt(points,10) + val;
+
+  if (new_points < 0) {
+      new_points = 0;
+  }
+
+  document.getElementById('points').value = new_points;
+  return new_points;
+}
+
+function modify_points(pts) {
+  var points = this.points
+  var new_points = parseInt(points,10) + pts;
+  
+  if (points > 0) {
+      points * 2
+  }
+
+  document.getElementById('points').value = new_points;
+  return new_points;
+}
+/*^^^^^^^ Not Finished Yet ^^^^^^^*/
+>>>>>>> 51cf26547937425a1facec52d4120bc5f76f3de7
