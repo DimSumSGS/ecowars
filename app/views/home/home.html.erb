@@ -2,16 +2,19 @@
 <%provide(:title , 'Home page') %>
 <html id='homebackground'>
 <link type="text/css" rel="stylesheet" href="homebackground.css" />
-
-<div id="hnav" class="hnav">
-    <div class='hlinks'>
-        <a href="#">Help</a>
-        <a href="#">Contact</a>
-        <a href="#">Social Media</a>
+<ul class='hnav'>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#comments">Comments</a></li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Social Media</a>
+    <div class="dropdown-content">
+      <a href="https://www.facebook.com/profile.php?id=100008308512312">Facebook</a>
+      <a href="https://www.instagram.com/justin_sungg/">Instagram</a>
     </div>
-</div>
+  </li>
+</ul>
 
-    
+
 
 
 
@@ -38,7 +41,7 @@
             <p>Take part in a game where humans are pitted against the retaliating spectrum of nature.</p>
             <p>Navigate to the top to begin.</p>
         </div>
-        <button1 onclick="document.getElementById('login').style.display='block'">ENGAGE NOW</button1>
+         <button1 class="engagenow" onclick="document.getElementById('login').style.display='block'">ENGAGE NOW</button1>
     </div>
 </header>
 

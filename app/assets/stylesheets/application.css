@@ -27,6 +27,7 @@
     cursor: pointer;
     width: 100%;
 }
+
 /*Engage now button effects*/
 .engagenow:hover {
     background-color:#5cbf2a;
@@ -88,9 +89,12 @@
     background:#fff;
 }
 
-/*Nav bar*/
-.hnav {
-    height: 4%; /* 100% Full-height */
+
+ .hnav {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    height: 4.8%; /* 100% Full-height */
     width: 100%; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
@@ -101,36 +105,69 @@
     box-shadow:0px 2px 6px rgba(0,0,0,1);
     border-width: 2px;
     border-bottom-width:2px;
-    border-bottom-color:White;
+    border-bottom-color: white;
     border-bottom-style: solid;
-}
-
-.hlinks {
-    width:750px;
-    float:right;
-    text-align:center;
-
+    text-align:right;
+    -webkit-transition:height 1s; /* For Safari 3.1 to 6.0 */
+    transition:height 1s;
 
 }
-/* The navigation menu links */
-.hlinks a {
-    padding: 8px 8px 8px 32px;
+
+.hnav:hover {
+    height: 150px;
+}
+
+li {
+    margin-right:3%;
+    display:inline-block;
     text-decoration: none;
     font-size: 20px;
     color: #fff;
     transition: 0.3s;
-    display:inline-block;
+    display:inline;
     font-family:Helvetica;
 
-} /* Try to get the logo and div to go higher*/
-
-
-
-/* When you mouse over the navigation links, change their color */
-.hlinks a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
 }
 
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color:rgba(75,229,96,0.4)
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size:15px;
+}
+
+.dropdown-content a:hover {
+    text-decoration:underline;
+    background-color:rgba(0,0,0,0);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -263,8 +300,7 @@ span.psw {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
     padding-top: 60px;
     border-style:solid;
     border-width: 4px;
@@ -342,6 +378,6 @@ span.psw {
  }
 
  .active {
-    background-color: #c1c132;
+    text-decoration:underline;
  }
 

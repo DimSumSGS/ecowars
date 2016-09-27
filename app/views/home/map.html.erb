@@ -1,9 +1,19 @@
 <%provide(:title, 'Map') %>
+<html id='homebackground'>
+<link type="text/css" rel="stylesheet" href="homebackground.css" />
+
+<div id="hnav" class="hnav">
+    <div class='hlinks'>
+        <a href="#">Help</a>
+        <a href="#">Contact</a>
+        <a href="#">Social Media</a>
+        <%= link_to 'Back', home_path %>
+    </div>
+</div>
 <body>
 	<div style='position:absolute;z-index:0;left:0;top:0;width:100%;height:100%'>
-  	<img src='http://www.timvandevall.com/wp-content/uploads/Blank-Treasure-Map.png' style='width:100%;height:100%' alt='[]' />
+  	<img src='http://www.timvandevall.com/wp-content/uploads/Blank-Treasure-Map.png' style='margin:auto' alt='[]' />
 	</div>
-	<%= link_to 'Back', home_path %>
 </body>
 <a href= /game>
 <div class='region'>

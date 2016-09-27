@@ -40,22 +40,23 @@ $(document).ready(function(){
     $(this).removeClass('active')
         
     });
+ 
 
-$( ".clicker" )
-  .mouseup(function() {
-    $( this ).removeClass( "pressed" );
-  })
-  .mousedown(function() {
-    $( this ).addClass( "pressed" );
-  });
 
-$( ".buy_trees")
-  .click(function(){
-    $( this ).append("plus 1");
-  });
+  $( ".clicker" )
+    .mouseup(function() {
+      $( this ).removeClass( "pressed" );
+    })
+    .mousedown(function() {
+      $( this ).addClass( "pressed" );
+    });
 
+  $( ".buy_trees")
+    .click(function(){
+      $( this ).append("plus 1");
+    });
+
+  for (var tree = 1; tree < 9; tree++) {
+    console.log(tree);
+  }
 });
-
-for (var tree = 1; tree < 9; tree++) {
-  console.log(tree);
-}
