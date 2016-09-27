@@ -40,32 +40,53 @@ function gcloseNav() {
 <div id="main">
 
 	<table>
-		<tbody>
-		<tr></tr>
-			<td>a</td>
-			<td>b</td>
-			<td class="right">
-				<div class="rightbox" style="display:inline-block;width:916px;height:100px;float:right"> 
-				</div>
-    		</td>
-		<tr></tr>
-			<td>
-			<img src = "https://images.cooltext.com/4780196.png" id="up" onclick="modify_qty(1)" ></button>
-			</td>
-			<td>
-				<div class="box">
-        			<input id="qty" value="0" />
-    			</div>
-			</td>
-		<tr></tr>
-			<td>
-				<img src = "https://images.cooltext.com/4783121.png" id="down" onclick="modify_qty(-1)"></button>
-			</td>
-			<td>
-				<div class="box">
-        			<input id="qty" value="0" />
-    			</div>
-			</td>
+		<tbody>	
+			<tr id = "Main">
+				<td id = "right">
+					<table>
+						<tbody>
+							<tr></tr>
+								<td>a</td>
+								<td>b</td>
+							<tr id = "buy"></tr>
+								<td>
+									<img src = "https://images.cooltext.com/4780196.png" id="up" onclick="modify_qty(1)" ></button>
+								</td>
+								<td>
+									<div class="box">
+        								<input id="qty" value="0" />
+    								</div>
+								</td>
+							<tr id = "sell"></tr>
+								<td>
+									<img src = "https://images.cooltext.com/4783121.png" id="down" onclick="modify_qty(-1)"></button>
+								</td>
+								<td>
+									<div class="box">
+        								<input id="qty" value="0" />
+    								</div>
+								</td>
+						</tbody>
+					</table>
+				</td>
+				<td id = "left">
+					<table>
+						<tbody>
+							<tr></tr>
+								<td id="topcenterright" style="display:inline-block;width:450px;height:100px;float:right">
+									<input id="points" value="0" />
+								</td>
+								<td id="topright" style="display:inline-block;width:450px;height:100px;float:right">
+								</td>
+						</tbody>
+    				</table>
+    			</td>
+			</tr>
+			<tr id = "bottom">
+				<td style="display:inline-block;width:400px;height:500px;"">
+				ABCDEFG
+				</td>
+			</tr>
 		</tbody>
 	</table>
 

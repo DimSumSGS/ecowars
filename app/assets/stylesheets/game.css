@@ -132,7 +132,7 @@
 }
 
 table, tr, td {
-    border: 5px #70b8ff dashed;
+    border: 2px #70b8ff dashed;
 }
 
 .buy_trees, tr {
@@ -141,7 +141,7 @@ table, tr, td {
     font-style: bold;
 }
 
-================================================
+======================DO NOT DELETE=========================
 
 input {
     font-size: 6px;
@@ -156,3 +156,11 @@ input {
 .box {
     text-align: center;
 }
+
+#bottom {
+    font-size: 32px;
+}
+
+
+
+======================DO NOT DELETE===========================
