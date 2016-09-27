@@ -3,8 +3,7 @@
 <html id='gamebackground'>
 
 <head>
-	<link type="text/css" rel="stylesheet" href="game.css"/>
-
+	<link type="text/css" rel="stylesheet" href="game.css" />
 	<title>Ecowars</title>
 </head>
 <!-- Game menu bar -->
@@ -38,23 +37,35 @@ function gcloseNav() {
 
 <!-- Everything must be put inside the div main -->
 
-<div id="gmain">
+<div id="main">
 
 	<table>
 		<tbody>
 		<tr></tr>
 			<td>a</td>
 			<td>b</td>
+			<td class="right">
+				<div class="rightbox" style="display:inline-block;width:916px;height:100px;float:right"> 
+				</div>
+    		</td>
 		<tr></tr>
-			<td class = "buy_trees"><img src= "https://images.cooltext.com/4780196.png"></td>
 			<td>
-			<script>
-			function 
-			</script>
+			<img src = "https://images.cooltext.com/4780196.png" id="up" onclick="modify_qty(1)" ></button>
+			</td>
+			<td>
+				<div class="box">
+        			<input id="qty" value="0" />
+    			</div>
 			</td>
 		<tr></tr>
-			<td>a</td>
-			<td>b</td>
+			<td>
+				<img src = "https://images.cooltext.com/4783121.png" id="down" onclick="modify_qty(-1)"></button>
+			</td>
+			<td>
+				<div class="box">
+        			<input id="qty" value="0" />
+    			</div>
+			</td>
 		</tbody>
 	</table>
 
@@ -68,4 +79,3 @@ function gcloseNav() {
     <div class= "clicker">Click Me!</div>
 
 </div>
-=======
