@@ -40,22 +40,7 @@ $(document).ready(function(){
         
     });
  
-<<<<<<< HEAD
 
-  $( ".clicker" )
-    .mouseup(function() {
-      $( this ).removeClass( "pressed" );
-    })
-    .mousedown(function() {
-      $( this ).addClass( "pressed" );
-    });
-
-  $( ".buy_trees")
-    .click(function(){
-      $( this ).append("plus 1");
-    });
-=======
->>>>>>> c9294a1c321e9546409524ee76d07747af3d3cf5
 });
 
 
