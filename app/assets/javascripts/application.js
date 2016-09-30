@@ -18,7 +18,6 @@
 /* Home screen */
 $(document).ready(function(){
   $('.popup').fadeIn('slow');
- 
 
   $('.xclose').hover(
     function(){
@@ -42,8 +41,6 @@ $(document).ready(function(){
     });
  
 
-
-<<<<<<< HEAD
   $( ".clicker" )
     .mouseup(function() {
       $( this ).removeClass( "pressed" );
@@ -56,13 +53,8 @@ $(document).ready(function(){
     .click(function(){
       $( this ).append("plus 1");
     });
+});
 
-  for (var tree = 1; tree < 9; tree++) {
-    console.log(tree);
-  }
-});
-=======
-});
 
 function modify_qty(val) {
     var qty = document.getElementById('qty').value;
@@ -102,4 +94,3 @@ function modify_points(pts) {
   return new_points;
 }
 /*^^^^^^^ Not Finished Yet ^^^^^^^*/
->>>>>>> 51cf26547937425a1facec52d4120bc5f76f3de7
