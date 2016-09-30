@@ -1,6 +1,6 @@
 
 <%provide(:title, 'Game Page') %>
-<html id='gamebackground'>
+<html id='gamebackground'> <!--Remember if we create a game background then create gamebackground.css-->
 
 <head>
 	<link type="text/css" rel="stylesheet" href="game.css" />
@@ -23,8 +23,8 @@
 <script>
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
 function gopenNav() {
-    document.getElementById("gSidenav").style.width = "250px";
-    document.getElementById("gmain").style.marginLeft = "250px";
+    document.getElementById("gSidenav").style.width = "200px";
+    document.getElementById("gmain").style.marginLeft = "200px";
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
@@ -37,7 +37,7 @@ function gcloseNav() {
 
 <!-- Everything must be put inside the div main -->
 
-<div id="main">
+<div id="gmain">
 
 	<table>
 		<tbody>	
@@ -83,9 +83,10 @@ function gcloseNav() {
     			</td>
 			</tr>
 			<tr id = "bottom">
-				<td style="display:inline-block;width:400px;height:500px;"">
+				<td style="display:inline-block;max-width:100%;max-height:100%;"">
 				ABCDEFG
 				</td>
+				
 			</tr>
 		</tbody>
 	</table>

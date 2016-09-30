@@ -40,7 +40,14 @@ $(document).ready(function(){
     $(this).removeClass('active')
         
     });
- 
+
+
+
+  /* Game page */
+
+  $(".myButton").click(function () {
+      $("#container").append('<div class="pic_holder"><img src="http://cliparts.co/cliparts/yck/Agr/yckAgrr5i.svg" id="pic"></div></div>');
+  });
 
   $( ".clicker" )
     .mouseup(function() {
@@ -50,6 +57,7 @@ $(document).ready(function(){
       $( this ).addClass( "pressed" );
     });
 });
+
 
 function modify_qty(val) {
     var qty = document.getElementById('qty').value;
@@ -62,3 +70,36 @@ function modify_qty(val) {
     document.getElementById('qty').value = new_qty;
     return new_qty;
 }
+<<<<<<< HEAD
+=======
+
+/*vvvvvv Not Finished Yet vvvvvvv*/
+
+function modify_points(p) {
+  var points = document.getElementById('points').value
+  var new_points = parseInt(points,10) + val;
+
+  if (new_points < 0) {
+      new_points = 0;
+  }
+
+  document.getElementById('points').value = new_points;
+  return new_points;
+}
+
+function modify_points(pts) {
+  var points = this.points
+  var new_points = parseInt(points,10) + pts;
+  
+  if (points > 0) {
+      points * 2
+  }
+
+  document.getElementById('points').value = new_points;
+  return new_points;
+}
+
+
+/*^^^^^^^ Not Finished Yet ^^^^^^^*/
+
+>>>>>>> 7c1f37288f86a3cb099a145e056ec260f9b4b788
