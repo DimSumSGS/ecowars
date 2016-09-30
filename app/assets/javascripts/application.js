@@ -40,10 +40,14 @@ $(document).ready(function(){
     $(this).removeClass('active')
         
     });
-<<<<<<< HEAD
-=======
- 
->>>>>>> 6050acd21de02addc425064574a61162b2405a74
+
+
+
+  /* Game page */
+
+  $(".myButton").click(function () {
+      $("#container").append('<div class="pic_holder"><img src="http://cliparts.co/cliparts/yck/Agr/yckAgrr5i.svg" id="pic"></div></div>');
+  });
 
   $( ".clicker" )
     .mouseup(function() {
@@ -92,5 +96,7 @@ function modify_points(pts) {
   document.getElementById('points').value = new_points;
   return new_points;
 }
+
+
 /*^^^^^^^ Not Finished Yet ^^^^^^^*/
 
