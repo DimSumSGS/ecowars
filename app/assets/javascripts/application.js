@@ -40,6 +40,7 @@ $(document).ready(function(){
         
     });
  
+<<<<<<< HEAD
 
   $( ".clicker" )
     .mouseup(function() {
@@ -53,6 +54,8 @@ $(document).ready(function(){
     .click(function(){
       $( this ).append("plus 1");
     });
+=======
+>>>>>>> c9294a1c321e9546409524ee76d07747af3d3cf5
 });
 
 
