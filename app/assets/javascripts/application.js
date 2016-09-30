@@ -40,6 +40,10 @@ $(document).ready(function(){
     $(this).removeClass('active')
         
     });
+<<<<<<< HEAD
+=======
+ 
+>>>>>>> 6050acd21de02addc425064574a61162b2405a74
 
   $( ".clicker" )
     .mouseup(function() {
