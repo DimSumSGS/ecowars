@@ -70,8 +70,6 @@ function modify_qty(val) {
     document.getElementById('qty').value = new_qty;
     return new_qty;
 }
-<<<<<<< HEAD
-=======
 
 /*vvvvvv Not Finished Yet vvvvvvv*/
 
@@ -101,5 +99,3 @@ function modify_points(pts) {
 
 
 /*^^^^^^^ Not Finished Yet ^^^^^^^*/
-
->>>>>>> 7c1f37288f86a3cb099a145e056ec260f9b4b788
