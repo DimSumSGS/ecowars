@@ -33,7 +33,7 @@
 .gsidenav .gclosebtn {
     position: absolute;
     top: 0;
-    left: 25px;
+    right: 5px;
     font-size: 36px;
     margin-left: 50px;
 }
