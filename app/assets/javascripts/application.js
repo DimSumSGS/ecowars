@@ -43,7 +43,14 @@ $(document).ready(function(){
 
 
 
+
   /* Game page */
+
+  $('#about').click(function(){
+    $(".gsidenav").toggleClass("");
+    $('#sub-menu-about').toggleClass("sub-menu-on");
+  });
+
 
   $(".myButton").click(function () {
       $("#container").append('<div class="pic_holder"><img src="http://cliparts.co/cliparts/yck/Agr/yckAgrr5i.svg" id="pic"></div></div>');
