@@ -35,65 +35,35 @@ function gcloseNav() {
 
 </script>
 
-<!-- Everything must be put inside the div main -->
+<!-- Everything must be put inside the div gmain -->
 
 <div id="gmain">
+	<div id = "intro">
+		<h1>SAVE THE WORLD!</h1>
+		<p>Buy <strong>TREES</strong> to save the world from human destruction!</p>
+	</div>
 
-	<table>
-		<tbody>	
-			<tr id = "Main">
-				<td id = "right">
-					<table>
-						<tbody>
-							<tr></tr>
-								<td>a</td>
-								<td>b</td>
-							<tr id = "buy"></tr>
-								<td>
-									<img src = "https://images.cooltext.com/4780196.png" id="up" onclick="modify_qty(1)" ></button>
-								</td>
-								<td>
-									<div class="box">
-        								<input id="qty" value="0" />
-    								</div>
-								</td>
-							<tr id = "sell"></tr>
-								<td>
-									<img src = "https://images.cooltext.com/4783121.png" id="down" onclick="modify_qty(-1)"></button>
+	<div id = "Main">
+		<div class="box">
+			<p>Trees</p>
+        	<input id="qty" value="0" />
+    	</div>
 
-								</td>
-						</tbody>
-					</table>
-				</td>
-				<td id = "left">
-					<table>
-						<tbody>
-							<tr></tr>
-								<td id="topcenterright" style="display:inline-block;width:450px;height:100px;float:right">
-									<input id="points" value="0" />
-								</td>
-								<td id="topright" style="display:inline-block;width:450px;height:100px;float:right">
-								</td>
-						</tbody>
-    				</table>
-    			</td>
-			</tr>
-			<tr id = "bottom">
-				<td style="display:inline-block;max-width:100%;max-height:100%;"">
-				ABCDEFG
-				</td>
-				
-			</tr>
-		</tbody>
-	</table>
+		<div id = "buy">
+			<button onclick="modify_qty(1)">
+			<img src = "https://images.cooltext.com/4780196.png">
+			</button>
+		</div>
 
-	<div id="blue"></div>
-  	<div id="red"></div>
-  	<div id="green"></div>
-	<div id="yellow"></div>
-  	<div id="black"></div>
-  	<div id="white"></div>
+		<div id = "sell">
+			<button onclick="modify_qty(-1)">
+			<img src = "https://images.cooltext.com/4783121.png">
+			</button>
+		</div>
+	</div>
 
-    <div class= "clicker">Click Me!</div>
-
+	<div>
+	<p>Timer</p>
+	<span id="resources"></span>
+	</div>
 </div>

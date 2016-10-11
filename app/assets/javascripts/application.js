@@ -58,6 +58,19 @@ $(document).ready(function(){
     });
 });
 
+var count=0;
+var counter=setInterval(resources, 1000);
+
+function resources()
+{
+  count=count+1;
+  if (count > 9999)
+  {
+      clearInterval(counter);
+      return;
+  }
+  document.getElementById("resources").innerHTML=count + " Resources";
+}
 
 function modify_qty(val) {
     var qty = document.getElementById('qty').value;
@@ -66,36 +79,10 @@ function modify_qty(val) {
     if (new_qty < 0) {
         new_qty = 0;
     }
-    
+
+    var counter=setInterval(resources,qty*1000);
+
     document.getElementById('qty').value = new_qty;
     return new_qty;
 }
 
-/*vvvvvv Not Finished Yet vvvvvvv*/
-
-function modify_points(p) {
-  var points = document.getElementById('points').value
-  var new_points = parseInt(points,10) + val;
-
-  if (new_points < 0) {
-      new_points = 0;
-  }
-
-  document.getElementById('points').value = new_points;
-  return new_points;
-}
-
-function modify_points(pts) {
-  var points = this.points
-  var new_points = parseInt(points,10) + pts;
-  
-  if (points > 0) {
-      points * 2
-  }
-
-  document.getElementById('points').value = new_points;
-  return new_points;
-}
-
-
-/*^^^^^^^ Not Finished Yet ^^^^^^^*/
