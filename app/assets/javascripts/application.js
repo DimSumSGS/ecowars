@@ -43,7 +43,6 @@ $(document).ready(function(){
 
 
 
-
   /* Game page */
 
   $('#about').click(function(){
@@ -64,32 +63,37 @@ $(document).ready(function(){
       $( this ).addClass( "pressed" );
     });
 });
+/* Tree + Resources timer */
 
-var count=0;
-var counter=setInterval(resources, 1000);
 
+var treeqty = 0;
+function buytrees()
+{
+  treeqty = treeqty + 1;
+  document.getElementById("treeqtydisplay").innerHTML = treeqty
+  return treeqty
+}
+
+function selltrees()
+{
+  treeqty = treeqty - 1;
+  document.getElementById("treeqtydisplay").innerHTML = treeqty
+  return treeqty
+}
+
+
+
+var counter=setInterval(resources, 5);
+var count = 0
 function resources()
 {
-  count=count+1;
-  if (count > 9999)
+  count=count+treeqty;
+  if (count > 100000)
   {
       clearInterval(counter);
       return;
   }
+  
   document.getElementById("resources").innerHTML=count + " Resources";
-}
-
-function modify_qty(val) {
-    var qty = document.getElementById('qty').value;
-    var new_qty = parseInt(qty,10) + val;
-    
-    if (new_qty < 0) {
-        new_qty = 0;
-    }
-
-    var counter=setInterval(resources,qty*1000);
-
-    document.getElementById('qty').value = new_qty;
-    return new_qty;
 }
 
