@@ -168,4 +168,6 @@
     color: blue;
 }
 
+#meter {border:1px solid #000;width:100%;height:50px;}
+#progress {background:green;height:50px;width:0%}
 ======================DO NOT DELETE===========================
