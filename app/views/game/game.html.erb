@@ -12,29 +12,29 @@
 <span style="font-size:30px;cursor:pointer" onclick="gopenNav()">&#9776; Game Menu</span>
 <div id="gSidenav" class="gsidenav">
   <a href="javascript:void(0)" class="gclosebtn" onclick="gcloseNav()">&times;</a>
-  <a id = "about" onclick="expand()">About</a>
-  <div class="sub-menu" id = "sub-menu-about">
+  <a id = "plants" onclick="gexpand()">Plants</a>
+  <div class="sub-menu" id = "sub-menu-plants">
          <li><a href="#">Sub Item 1</a></li>
          <li><a href="#">Sub Item 2</a></li>
          <li><a href="#">Sub Item 3</a></li>
          <li><a href="#">Sub Item 4</a></li>
   </div>
-  <a id = "services">Services</a>
-  <div class="sub-menu">
+  <a id = "protection" onclick="gexpand()">Protection</a>
+  <div class="sub-menu" id = "sub-menu-protection">
          <li><a href="#">Sub Item 1</a></li>
          <li><a href="#">Sub Item 2</a></li>
          <li><a href="#">Sub Item 3</a></li>
          <li><a href="#">Sub Item 4</a></li>
   </div>
-  <a id = "buys">Buys</a>
-  <div class="sub-menu">
+  <a id = "upgrades" onclick="gexpand()">Upgrades</a>
+  <div class="sub-menu" id = "sub-menu-upgrades">
          <li><a href="#">Sub Item 1</a></li>
          <li><a href="#">Sub Item 2</a></li>
          <li><a href="#">Sub Item 3</a></li>
          <li><a href="#">Sub Item 4</a></li>
   </div>
-  <a id = "contact">Contact</a>
-  <div class="sub-menu">
+  <a id = "gamemenu" onclick="gexpand()">Game Menu</a>
+  <div class="sub-menu" id = "sub-menu-gamemenu">
          <li><a href="#">Sub Item 1</a></li>
          <li><a href="#">Sub Item 2</a></li>
          <li><a href="#">Sub Item 3</a></li>
@@ -49,21 +49,22 @@
 <script>
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
 function gopenNav() {
-    document.getElementById("gSidenav").style.width = "200px";
-    document.getElementById("gmain").style.marginLeft = "200px";
+    document.getElementById("gSidenav").style.width = "230px";
+    document.getElementById("gmain").style.marginLeft = "230px";
 }
 
+function gexpand() {
+	document.getElementbyId("gSidenav").style.width = "400px"
+	document.getElementById("gmain").style.marginLeft = "400px";
+
+}
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
 function gcloseNav() {
     document.getElementById("gSidenav").style.width = "0";
     document.getElementById("gmain").style.marginLeft = "0";
 }
 
-function expand() {
-	document.getElementbyId("gSidenav").style.width = "400px"
-	document.getElementById("gmain").style.marginLeft = "400px";
 
-}
 </script>
 
 <!-- Everything must be put inside the div gmain -->
@@ -90,10 +91,12 @@ function bar(){
   if(percent>=100) {
     percent = 100;
     progress.style.width = percent + "%";
+    percent = Math.round(percent); //makes the progress round to whole numbers
     document.getElementById("demo").innerHTML = percent * 1  + '%';
   }
   else {
     progress.style.width = percent + "%";
+    percent = Math.round(percent); //makes the progress round to whole number
     document.getElementById("demo").innerHTML = percent * 1  + '%';
   };     
 } 

@@ -45,10 +45,27 @@ $(document).ready(function(){
 
   /* Game page */
 
-  $('#about').click(function(){
+  $('#plants').click(function(){
     $(".gsidenav").toggleClass("");
-    $('#sub-menu-about').toggleClass("sub-menu-on");
+    $('#sub-menu-plants').toggleClass("sub-menu-on");
   });
+
+  $('#protection').click(function(){
+    $(".gsidenav").toggleClass("");
+    $('#sub-menu-protection').toggleClass("sub-menu-on");
+  });
+  
+  $('#upgrades').click(function(){
+    $(".gsidenav").toggleClass("");
+    $('#sub-menu-upgrades').toggleClass("sub-menu-on");
+  });
+
+ $('#gamemenu').click(function(){
+    $(".gsidenav").toggleClass("");
+    $('#sub-menu-gamemenu').toggleClass("sub-menu-on");
+  });
+
+
 
 
   $(".myButton").click(function () {
