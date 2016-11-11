@@ -85,8 +85,17 @@ $(document).ready(function(){
 var game = 1
 /* Tree + Resources timer */
 
-
+/*Variables*/
 var treeqty = 0;
+var forestqty = 0;
+
+
+
+
+
+
+
+/*Buy and sell*/
 function buytrees()
 {
   treeqty = treeqty + 1;
@@ -103,13 +112,37 @@ function selltrees()
  }
 }
 
+function buyforests()
+{
+  forestqty = forestqty + 1;
+  document.getElementById("forestqtydisplay").innerHTML = forestqty;
+  return forestqty
+}
 
+function sellforests()
+{
+  if (forestqty > 0) {
+  forestqty = forestqty - 1;
+  document.getElementById("forestqtydisplay").innerHTML = forestqty;
+  return forestqty
+ }
+}
+
+
+/*Worth*/
+var treeworth = treeqty
+var forestworth = forestqty * 5 //5 trees per forestqty
+
+/*Resource counters*/
 
 var resourcecounter=setInterval(resources, 1000);
 var resourcecount = 0
 
-function resources() {
-    resourcecount=resourcecount+treeqty;
+
+/*Final qty*/
+var qty = treeworth + forestworth
+function resources(qty) {
+    resourcecount=resourcecount+qty;
     if (resourcecount > 10000)
     {
         clearInterval(resourcecounter);
@@ -120,12 +153,12 @@ function resources() {
   
 }
 
-/* Waves */
+
 /*variables*/
-var wavecounter = setInterval(waves, 10000) /* Sets the waves to happen every 30 seconds */
+var wavecounter = setInterval(waves, 10000) /* Sets the waves to happen every 10 seconds */
 var wavecount = 0;
 
-
+/* Waves */
 function waves() {
   wavecount = wavecount + 1;
   var treeloss = Math.pow(wavecount, 2); /* Squares the wavecount (e.g 10 x 10 = 100 trees lost) */
@@ -146,6 +179,7 @@ function waves() {
   document.getElementById("treeqtydisplay").innerHTML = treeqty;
   return;
 }
+
 
 // var barcounter = setInterval(increase, 1000);
 // // /*Progress bar*/

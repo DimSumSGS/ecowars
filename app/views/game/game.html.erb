@@ -11,34 +11,40 @@
 <!-- Game menu bar -->
 <span style="font-size:30px;cursor:pointer" onclick="gopenNav()">&#9776; Game Menu</span>
 <div id="gSidenav" class="gsidenav">
-  <a href="javascript:void(0)" class="gclosebtn" onclick="gcloseNav()">&times;</a>
-  <a id = "plants" onclick="gexpand()">Plants</a>
+  <p href="javascript:void(0)" class="gclosebtn" onclick="gcloseNav()">&times;</a>
+  <p id = "plants" onclick="gexpand()">Plants</p>
   <div class="sub-menu" id = "sub-menu-plants">
-         <li><a href="#">Sub Item 1</a></li>
-         <li><a href="#">Sub Item 2</a></li>
-         <li><a href="#">Sub Item 3</a></li>
-         <li><a href="#">Sub Item 4</a></li>
+		 <div class="buynsell"><p>Trees</p></div>
+		 <div class="buynsell"><p>Forests</p>
+         	<ul>
+            	<li><p onclick ="buyforests()">Buy</p></li>
+            	<li><p onclick ="sellforests()">Sell</p></li>
+            </ul>
+         </div>
+         <div class="buynsell"><p>Sub Item 3</p></div>
+         <div class="buynsell"><p>Sub Item 4</p></div>
+
   </div>
-  <a id = "protection" onclick="gexpand()">Protection</a>
+  <p id = "protection" onclick="gexpand()">Protection</p>
   <div class="sub-menu" id = "sub-menu-protection">
-         <li><a href="#">Sub Item 1</a></li>
-         <li><a href="#">Sub Item 2</a></li>
-         <li><a href="#">Sub Item 3</a></li>
-         <li><a href="#">Sub Item 4</a></li>
+         <div class="buynsell"><p>Sub Item 1</p></div>
+         <div class="buynsell"><p>Sub Item 2</p></div>
+         <div class="buynsell"><p>Sub Item 3</p></div>
+         <div class="buynsell"><p>Sub Item 4</p></div>
   </div>
-  <a id = "upgrades" onclick="gexpand()">Upgrades</a>
+  <p id = "upgrades" onclick="gexpand()">Upgrades</p>
   <div class="sub-menu" id = "sub-menu-upgrades">
-         <li><a href="#">Sub Item 1</a></li>
-         <li><a href="#">Sub Item 2</a></li>
-         <li><a href="#">Sub Item 3</a></li>
-         <li><a href="#">Sub Item 4</a></li>
+         <div class="buynsell"><p>Sub Item 1</p></div>
+         <div class="buynsell"><p>Sub Item 2</p></div>
+         <div class="buynsell"><p>Sub Item 3</p></div>
+         <div class="buynsell"><p>Sub Item 4</p></div>
   </div>
-  <a id = "gamemenu" onclick="gexpand()">Game Menu</a>
+  <p id = "gamemenu" onclick="gexpand()">Game Menu</p>
   <div class="sub-menu" id = "sub-menu-gamemenu">
-         <li><a href="#">Sub Item 1</a></li>
-         <li><a href="#">Sub Item 2</a></li>
-         <li><a href="#">Sub Item 3</a></li>
-         <li><a href="#">Sub Item 4</a></li>
+         <div class="buynsell"><p>Sub Item 1</p></div>
+         <div class="buynsell"><p>Sub Item 2</p></div>
+         <div class="buynsell"><p>Sub Item 3</p></div>
+         <div class="buynsell"><p>Sub Item 4</p></div>
   </div>
 </div>
 
@@ -54,7 +60,7 @@ function gopenNav() {
 }
 
 function gexpand() {
-	document.getElementbyId("gSidenav").style.width = "400px"
+	document.getElementbyId("gSidenav").style.width = "400px";
 	document.getElementById("gmain").style.marginLeft = "400px";
 
 }
@@ -74,7 +80,7 @@ function gcloseNav() {
 		<h1>SAVE THE WORLD!</h1>
 		<p>Buy <strong>TREES</strong> to save the world from human destruction!</p>
 	</div>
-	<div class="w3-container">
+
 
   	<div id="meter"><div id="progress"><div id="demo" class="w3-container w3-text-white">0%</div></div> </div>
 
@@ -106,6 +112,8 @@ function bar(){
 		<div class="box">
 			<p>Trees</p>
         	<p id="treeqtydisplay">0</p>
+        	<p>Forests</p>
+        	<p id="forestqtydisplay">0</p>
     	</div>
 
 		<div id = "buy">
@@ -121,7 +129,7 @@ function bar(){
 	</div>
 
 	<div>
-	<p>Timer</p>
+	<p id ="timer">Timer</p>
 	<p id="resources"></p>
 	</div>
 
